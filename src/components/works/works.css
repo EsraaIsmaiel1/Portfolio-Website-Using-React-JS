@@ -52,3 +52,35 @@
         height: 48vh;
     }
 }
+
+.worksContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.workItem {
+    position: relative;
+    margin: 10px;
+}
+
+.workLink {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.workItem:hover .workLink {
+    opacity: 1;
+}
+
+.worksImg {
+    width: 200px;
+    height: 200px;
+}
